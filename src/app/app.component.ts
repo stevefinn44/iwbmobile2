@@ -8,7 +8,7 @@ import { ListPage } from '../pages/list/list';
 
 // Import Auth0Cordova
 import Auth0Cordova from '@auth0/cordova';
-import { AuthService } from '../services/auth.service';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -23,8 +23,8 @@ export class MyApp {
   constructor(
     public platform: Platform,
     public statusBar: StatusBar,
-    public splashScreen: SplashScreen,
-    private authService: AuthService) {
+    public splashScreen: SplashScreen
+    ) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
